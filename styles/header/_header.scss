@@ -1,0 +1,46 @@
+.header {
+  font-family: monospace;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 16px;
+  background-color: $c-burlywood;
+
+  &__icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: $c-beige;
+    font-size: 24px;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__link {
+    color: $c-beige;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: $sw-laptop) {
+  .header {
+    &__navigation {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

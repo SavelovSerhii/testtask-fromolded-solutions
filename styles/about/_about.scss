@@ -1,0 +1,33 @@
+.about {
+  &__main {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $c-wheat;
+    color: $c-dark-burlywood;
+  }
+
+  &__description {
+    width: 60%;
+  }
+
+  &__title {
+    font-size: 36px;
+  }
+
+  &__description {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: $sw-tablet) {
+  .about {
+    &__title {
+      font-size: 32px;
+    }
+
+    &__description {
+      font-size: 22px;
+    }
+  }
+}
